@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Git/Shooter/0520_Shooting/Content/BgBoard.png</File>
+    <File>C:/Git/Shooter/0520_Shooting/Content/BgDai01.png</File>
+    <File>C:/Git/Shooter/0520_Shooting/Content/BgDai02.png</File>
+    <File>C:/Git/Shooter/0520_Shooting/Content/BgSyou01.png</File>
+    <File>C:/Git/Shooter/0520_Shooting/Content/BgSyou02.png</File>
+    <File>C:/Git/Shooter/0520_Shooting/Content/Chrono.png</File>
+    <File>C:/Git/Shooter/0520_Shooting/Content/Enemy01.gif</File>
+    <File>C:/Git/Shooter/0520_Shooting/Content/GameClear.png</File>
+    <File>C:/Git/Shooter/0520_Shooting/Content/GameOver.png</File>
+    <File>C:/Git/Shooter/0520_Shooting/Content/Player02.png</File>
+    <File>C:/Git/Shooter/0520_Shooting/Content/PushEnter.png</File>
+    <File>C:/Git/Shooter/0520_Shooting/Content/Sousa.png</File>
+    <File>C:/Git/Shooter/0520_Shooting/Content/Tama.png</File>
+    <File>C:/Git/Shooter/0520_Shooting/Content/Title.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

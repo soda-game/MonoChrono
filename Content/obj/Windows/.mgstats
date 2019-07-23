@@ -1,0 +1,15 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Git/Shooter/0520_Shooting/Content/BgBoard.png","C:/Git/Shooter/0520_Shooting/Content/bin/Windows/BgBoard.xnb","TextureProcessor","Texture2DContent",2366,1920085,0.2499575
+"C:/Git/Shooter/0520_Shooting/Content/BgDai01.png","C:/Git/Shooter/0520_Shooting/Content/bin/Windows/BgDai01.xnb","TextureProcessor","Texture2DContent",5870,1920085,2.496699
+"C:/Git/Shooter/0520_Shooting/Content/BgDai02.png","C:/Git/Shooter/0520_Shooting/Content/bin/Windows/BgDai02.xnb","TextureProcessor","Texture2DContent",5886,1920085,0.1502258
+"C:/Git/Shooter/0520_Shooting/Content/BgSyou01.png","C:/Git/Shooter/0520_Shooting/Content/bin/Windows/BgSyou01.xnb","TextureProcessor","Texture2DContent",5275,1920085,0.1406217
+"C:/Git/Shooter/0520_Shooting/Content/BgSyou02.png","C:/Git/Shooter/0520_Shooting/Content/bin/Windows/BgSyou02.xnb","TextureProcessor","Texture2DContent",5096,1920085,0.1281491
+"C:/Git/Shooter/0520_Shooting/Content/Chrono.png","C:/Git/Shooter/0520_Shooting/Content/bin/Windows/Chrono.xnb","TextureProcessor","Texture2DContent",1447,16469,0.0220444
+"C:/Git/Shooter/0520_Shooting/Content/Enemy01.gif","C:/Git/Shooter/0520_Shooting/Content/bin/Windows/Enemy01.xnb","TextureProcessor","Texture2DContent",1312,16469,0.0558435
+"C:/Git/Shooter/0520_Shooting/Content/GameClear.png","C:/Git/Shooter/0520_Shooting/Content/bin/Windows/GameClear.xnb","TextureProcessor","Texture2DContent",1875,164245,0.0387413
+"C:/Git/Shooter/0520_Shooting/Content/GameOver.png","C:/Git/Shooter/0520_Shooting/Content/bin/Windows/GameOver.xnb","TextureProcessor","Texture2DContent",1794,143125,0.0299191
+"C:/Git/Shooter/0520_Shooting/Content/Player02.png","C:/Git/Shooter/0520_Shooting/Content/bin/Windows/Player02.xnb","TextureProcessor","Texture2DContent",1531,49237,0.2084462
+"C:/Git/Shooter/0520_Shooting/Content/PushEnter.png","C:/Git/Shooter/0520_Shooting/Content/bin/Windows/PushEnter.xnb","TextureProcessor","Texture2DContent",1679,76117,0.0300789
+"C:/Git/Shooter/0520_Shooting/Content/Sousa.png","C:/Git/Shooter/0520_Shooting/Content/bin/Windows/Sousa.xnb","TextureProcessor","Texture2DContent",28001,1920085,0.1423122
+"C:/Git/Shooter/0520_Shooting/Content/Tama.png","C:/Git/Shooter/0520_Shooting/Content/bin/Windows/Tama.xnb","TextureProcessor","Texture2DContent",849,661,0.0109721
+"C:/Git/Shooter/0520_Shooting/Content/Title.png","C:/Git/Shooter/0520_Shooting/Content/bin/Windows/Title.xnb","TextureProcessor","Texture2DContent",3799,480085,0.0802277
