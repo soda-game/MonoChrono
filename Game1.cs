@@ -146,13 +146,71 @@ namespace _0520_Mono
         /// </summary>
         protected override void Initialize()
         {
+            playerDaedF = false;
+
+            playerDamageAnimeTime = 0;
+            playerAlpha = 255;
+            playerAnimaTime = 0;
+            playerAnimaSum = 0;
+            playerAnimaSize = 0;
+            playerAnimaEnd = false;
+
+
+
+            //敵 弾は複数出すため、配列に
+            enemySyurui = 0;
+            settim = 0;
+            enemyTamaPos = new Vector2[20];      //弾の位置
+            enemyTamaVel = new Vector2[20];     //弾の移動
+            enemyTamaSecond = 0;
+
+            //プレイヤー 弾
+            playerTamaPos = new Vector2[20];      //弾の位置
+            playerTamaVel = new Vector2[20];     //弾の移動
+            playerTamaF = new bool[20];        //弾フラグ
+            tamaSpeed = 6.0f;
+            playerTamaSecond = 0;
+
+            //敵
+            enemyPrefabTime = 0;
+            enemyPrafabF = new bool[20];
+            enemyPos = new Vector2[20];
+            enemySpeed = 2;
+            enemyDaedF = new bool[20];
+
+            BossEnemyF = new bool[20];
+            enemyPrefab02F = 0;
+
+            afterEnemyHp = new int[20];
+            enemyAnimaSize = new int[20];
+
+            //ドュン
+            dyunAnimeTime = 0;
+            dyunAnimeSize = 0;
+
+            dyunEnemyTime = 0;
+            dyunEnemySize = 0;
+
+            //時計
+            tokeiPos = Vector2.Zero;
+            tokeiPrefabTime = 0;
+            chronoTime = 180;
+            tokeiPrefabF = false;
+
+            chronoF = false;
+
+            UiAlpha = 255;
+
+            pushEnterF=false;
+            BossNumF=0;
+
             // TODO: Add your initialization logic here
+            senniF = 0;
 
             playerHp = 3;
             playerDamageF = false;
             playerPos = new Vector2(50, 50);
             playerVel = Vector2.Zero;
-
 
             //時計
 
@@ -212,7 +270,7 @@ namespace _0520_Mono
             gameClear = Content.Load<Texture2D>("gameClear");
             pushEnter = Content.Load<Texture2D>("PushEnter");
 
-            BgBoard  = Content.Load<Texture2D>("BgBoard");
+            BgBoard = Content.Load<Texture2D>("BgBoard");
 
 
             // TODO: use this.Content to load your game content here
@@ -265,11 +323,11 @@ namespace _0520_Mono
                     break;
 
                 case 3:
-                    Window.Title = "本当はEnterキーでリトライできるようにしたかったよ！時間が無かったよ！！ごめんね！！";
+                    Window.Title = "Enterキーでタイトルへ";
                     break;
 
                 case 4:
-                    Window.Title = "すごい！遊んでくれてありがとう！！(スコア表示するの忘れたなんて言えない…)";
+                    Window.Title = "すごい！遊んでくれてありがとう！！　　Enterキーでタイトルへ";
                     break;
             }
 
@@ -360,17 +418,31 @@ namespace _0520_Mono
                 else if (!Keyboard.GetState().IsKeyDown(Keys.Enter) && pushEnterF)
                 {
                     //初期化
-
+                    Initialize();
 
 
                     pushEnterF = false;
-                    //senniF = 2;
 
                 }
             }
             if (BossNumF >= 3)
             {
                 senniF = 4;
+                if (Keyboard.GetState().IsKeyDown(Keys.Enter))
+                {
+                    pushEnterF = true;
+                }
+                else if (!Keyboard.GetState().IsKeyDown(Keys.Enter) && pushEnterF)
+                {
+                    //初期化
+                    Initialize();
+
+
+                    pushEnterF = false;
+                    //senniF = 2;
+
+                }
+
             }
 
             Console.WriteLine("pos:" + tokeiPos);
@@ -449,7 +521,7 @@ namespace _0520_Mono
                         else
                         {
                             enemyAnimaEnd[i] = true;
-                            if (BossEnemyF[i] )
+                            if (BossEnemyF[i])
                             {
                                 Debug.WriteLine(i + ":" + enemyAnimaEnd[i]);
 
@@ -520,15 +592,15 @@ namespace _0520_Mono
                     {
                         playerVel.X = 1.0f;
                     }
-                    if (Keyboard.GetState().IsKeyDown(Keys.A)&&playerPos.X > 5)
+                    if (Keyboard.GetState().IsKeyDown(Keys.A) && playerPos.X > 5)
                     {
                         playerVel.X = -1.0f;
                     }
-                    if (Keyboard.GetState().IsKeyDown(Keys.W) && playerPos.Y >8)
+                    if (Keyboard.GetState().IsKeyDown(Keys.W) && playerPos.Y > 8)
                     {
                         playerVel.Y = -1.0f;
                     }
-                    if (Keyboard.GetState().IsKeyDown(Keys.S)&&playerPos.Y < 530)
+                    if (Keyboard.GetState().IsKeyDown(Keys.S) && playerPos.Y < 530)
                     {
                         playerVel.Y = 1.0f;
 
@@ -613,7 +685,7 @@ namespace _0520_Mono
                         if (!enemyDaedF[i])
                         {
 
-                            if (BossEnemyF[i]  && enemyPos[i].X < 760)
+                            if (BossEnemyF[i] && enemyPos[i].X < 760)
                             {
 
                             }
@@ -633,7 +705,7 @@ namespace _0520_Mono
                         }
 
 
-                        if (BossEnemyF[i] )
+                        if (BossEnemyF[i])
                         {
                             enemyTamaSecond++;
 
@@ -816,11 +888,12 @@ namespace _0520_Mono
 
 
 
-                            
-                            if(BossEnemyF[i] )
+
+                            if (BossEnemyF[i])
                             {
                                 enemyHp[i] = 7;
-                            }else
+                            }
+                            else
                             {
                                 enemyHp[i] = 2;
                             }
@@ -1041,9 +1114,9 @@ namespace _0520_Mono
                 }
             }
 
-            if ( senniF == 3)
+            if (senniF == 3)
             {
-                spriteBatch.Draw(BgBoard , new Rectangle(0, 0, 800, 600), Color.Black * (130 / 255f));
+                spriteBatch.Draw(BgBoard, new Rectangle(0, 0, 800, 600), Color.Black * (130 / 255f));
 
             }
 
@@ -1077,8 +1150,8 @@ namespace _0520_Mono
             if (senniF == 1)
             {
                 spriteBatch.Draw(sousa, sousaPos, Color.White);
-                spriteBatch.Draw(tokei, new Vector2 (190,375), Color.White);
-                spriteBatch.Draw(pushEnter, new Vector2 (230 ,490), Color.White);
+                spriteBatch.Draw(tokei, new Vector2(190, 375), Color.White);
+                spriteBatch.Draw(pushEnter, new Vector2(230, 490), Color.White);
 
 
             }
@@ -1089,7 +1162,7 @@ namespace _0520_Mono
             }
             if (senniF == 4)
             {
-                spriteBatch.Draw(BgBoard, new Rectangle(0, 0, 800, 600), Color.White  * (170 / 255f));
+                spriteBatch.Draw(BgBoard, new Rectangle(0, 0, 800, 600), Color.White * (170 / 255f));
 
                 spriteBatch.Draw(gameClear, gameClearPos, Color.White);
 

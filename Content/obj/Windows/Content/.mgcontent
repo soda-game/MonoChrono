@@ -4,20 +4,20 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/CS/1nen/MonoGame/0520_Shooting/Content/BgBoard.png</File>
-    <File>C:/CS/1nen/MonoGame/0520_Shooting/Content/BgDai01.png</File>
-    <File>C:/CS/1nen/MonoGame/0520_Shooting/Content/BgDai02.png</File>
-    <File>C:/CS/1nen/MonoGame/0520_Shooting/Content/BgSyou01.png</File>
-    <File>C:/CS/1nen/MonoGame/0520_Shooting/Content/BgSyou02.png</File>
-    <File>C:/CS/1nen/MonoGame/0520_Shooting/Content/Chrono.png</File>
-    <File>C:/CS/1nen/MonoGame/0520_Shooting/Content/Enemy01.gif</File>
-    <File>C:/CS/1nen/MonoGame/0520_Shooting/Content/GameClear.png</File>
-    <File>C:/CS/1nen/MonoGame/0520_Shooting/Content/GameOver.png</File>
-    <File>C:/CS/1nen/MonoGame/0520_Shooting/Content/Player02.png</File>
-    <File>C:/CS/1nen/MonoGame/0520_Shooting/Content/PushEnter.png</File>
-    <File>C:/CS/1nen/MonoGame/0520_Shooting/Content/Sousa.png</File>
-    <File>C:/CS/1nen/MonoGame/0520_Shooting/Content/Tama.png</File>
-    <File>C:/CS/1nen/MonoGame/0520_Shooting/Content/Title.png</File>
+    <File>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/BgBoard.png</File>
+    <File>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/BgDai01.png</File>
+    <File>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/BgDai02.png</File>
+    <File>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/BgSyou01.png</File>
+    <File>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/BgSyou02.png</File>
+    <File>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/Chrono.png</File>
+    <File>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/Enemy01.gif</File>
+    <File>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/GameClear.png</File>
+    <File>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/GameOver.png</File>
+    <File>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/Player02.png</File>
+    <File>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/PushEnter.png</File>
+    <File>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/Sousa.png</File>
+    <File>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/Tama.png</File>
+    <File>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/Title.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

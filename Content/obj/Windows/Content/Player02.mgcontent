@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/CS/1nen/MonoGame/0520_Shooting/Content/Player02.png</SourceFile>
-  <SourceTime>2019-05-28T13:42:29.4553634+09:00</SourceTime>
-  <DestFile>C:/CS/1nen/MonoGame/0520_Shooting/Content/bin/Windows/Content/Player02.xnb</DestFile>
-  <DestTime>2019-06-13T17:06:43.51412+09:00</DestTime>
+  <SourceFile>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/Player02.png</SourceFile>
+  <SourceTime>2019-07-23T02:40:40+09:00</SourceTime>
+  <DestFile>C:/Users/K019G1032/Desktop/MonoChrono-master/Content/bin/Windows/Content/Player02.xnb</DestFile>
+  <DestTime>2020-09-23T22:18:26.6502783+09:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-09T01:35:54+09:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
